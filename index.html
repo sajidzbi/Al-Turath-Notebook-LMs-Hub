@@ -2834,7 +2834,7 @@ function boot(){
   // name back to the correct embedded baseline whenever that hasn't happened
   // yet, then never runs again - so anything the user customizes afterwards
   // (including renaming the app again via Settings) is respected normally.
-  const BASELINE_VERSION='8';
+  const BASELINE_VERSION='9';
   const needsMigration=localStorage.getItem(K.MAINCATS+'_v')!==BASELINE_VERSION;
   if(needsMigration){
     S.nbs=defNBs();
